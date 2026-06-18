@@ -138,12 +138,12 @@ namespace UPSGuard.SignalClient
             }
             catch (TimeoutException)
             {
-                Log("Timeout: NotifyHost не запущен (пайп недоступен) или не успел ответить.");
+                Log("Timeout: NotifyHost РЅРµ Р·Р°РїСѓС‰РµРЅ (РїР°Р№Рї РЅРµРґРѕСЃС‚СѓРїРµРЅ) РёР»Рё РЅРµ СѓСЃРїРµР» РѕС‚РІРµС‚РёС‚СЊ.");
                 return 1;
             }
             catch (UnauthorizedAccessException ex)
             {
-                Log("Access denied to pipe (ACL/учётка сервера): " + ex.Message);
+                Log("Access denied to pipe (ACL/СѓС‡С‘С‚РєР° СЃРµСЂРІРµСЂР°): " + ex.Message);
                 return 4;
             }
             catch (IOException ex)

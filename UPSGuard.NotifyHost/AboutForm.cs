@@ -26,7 +26,7 @@ namespace UPSGuard.NotifyHost
         {
             _scale = GetScale();
 
-            Text = "О приложении";
+            Text = "Рћ РїСЂРёР»РѕР¶РµРЅРёРё";
             AutoScaleMode = AutoScaleMode.Dpi;
             FormBorderStyle = FormBorderStyle.FixedDialog;
             StartPosition = FormStartPosition.CenterScreen;
@@ -81,7 +81,7 @@ namespace UPSGuard.NotifyHost
 
             var version = new Label
             {
-                Text = $"Версия {versionText}",
+                Text = $"Р’РµСЂСЃРёСЏ {versionText}",
                 Left = S(20),
                 Top = title.Bottom + S(2),
                 Width = w - S(40),
@@ -95,7 +95,7 @@ namespace UPSGuard.NotifyHost
 
             var subtitle = new Label
             {
-                Text = "Модуль уведомлений о состоянии электропитания и ИБП",
+                Text = "РњРѕРґСѓР»СЊ СѓРІРµРґРѕРјР»РµРЅРёР№ Рѕ СЃРѕСЃС‚РѕСЏРЅРёРё СЌР»РµРєС‚СЂРѕРїРёС‚Р°РЅРёСЏ Рё РР‘Рџ",
                 Left = S(30),
                 Top = version.Bottom + S(14),
                 Width = w - S(60),
@@ -121,19 +121,19 @@ namespace UPSGuard.NotifyHost
             int rowY = S(18);
             int rowStep = S(28);
 
-            AddInfoRow(infoPanel, "Программа:", productName, labelX, valueX, rowY);
+            AddInfoRow(infoPanel, "РџСЂРѕРіСЂР°РјРјР°:", productName, labelX, valueX, rowY);
             rowY += rowStep;
 
-            AddInfoRow(infoPanel, "Версия:", versionText, labelX, valueX, rowY);
+            AddInfoRow(infoPanel, "Р’РµСЂСЃРёСЏ:", versionText, labelX, valueX, rowY);
             rowY += rowStep;
 
-            AddInfoRow(infoPanel, "Компонент:", "NotifyHost", labelX, valueX, rowY);
+            AddInfoRow(infoPanel, "РљРѕРјРїРѕРЅРµРЅС‚:", "NotifyHost", labelX, valueX, rowY);
             rowY += rowStep;
 
-            AddInfoRow(infoPanel, "Компания:", "Код безопасности", labelX, valueX, rowY);
+            AddInfoRow(infoPanel, "РљРѕРјРїР°РЅРёСЏ:", "РљРѕРґ Р±РµР·РѕРїР°СЃРЅРѕСЃС‚Рё", labelX, valueX, rowY);
             rowY += rowStep;
 
-            AddInfoRow(infoPanel, "Назначение:", "Отображение уведомлений ИБП", labelX, valueX, rowY);
+            AddInfoRow(infoPanel, "РќР°Р·РЅР°С‡РµРЅРёРµ:", "РћС‚РѕР±СЂР°Р¶РµРЅРёРµ СѓРІРµРґРѕРјР»РµРЅРёР№ РР‘Рџ", labelX, valueX, rowY);
 
             var footer = new Panel
             {
@@ -148,7 +148,7 @@ namespace UPSGuard.NotifyHost
 
             var closeBtn = new Button
             {
-                Text = "Закрыть",
+                Text = "Р—Р°РєСЂС‹С‚СЊ",
                 Width = S(92),
                 Height = S(34),
                 Left = footer.Width - S(24) - S(92),
