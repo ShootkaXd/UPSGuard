@@ -1,0 +1,52 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFramework>net9.0-windows</TargetFramework>
+		<UseWindowsForms>true</UseWindowsForms>
+		<OutputType>WinExe</OutputType>
+
+		<Platforms>x64</Platforms>
+		<PlatformTarget>x64</PlatformTarget>
+		<AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+		<AppendRuntimeIdentifierToOutputPath>false</AppendRuntimeIdentifierToOutputPath>
+
+		<AssemblyName>UPSGuard.NotifyHost</AssemblyName>
+		<RootNamespace>UPSGuard.NotifyHost</RootNamespace>
+		<Nullable>enable</Nullable>
+		<ImplicitUsings>enable</ImplicitUsings>
+
+		<ApplicationIcon>Assets\icon.ico</ApplicationIcon>
+
+		<Product>UPSGuard</Product>
+		<Version>4.2.1</Version>
+		<FileVersion>4.2.1.0</FileVersion>
+		<AssemblyVersion>4.2.1.0</AssemblyVersion>
+		<InformationalVersion>4.2.1</InformationalVersion>
+
+		<IncludeSourceRevisionInInformationalVersion>false</IncludeSourceRevisionInInformationalVersion>
+	</PropertyGroup>
+
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+		<OutputPath>bin\x64\Debug\</OutputPath>
+		<IntermediateOutputPath>obj\x64\Debug\</IntermediateOutputPath>
+	</PropertyGroup>
+
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+		<OutputPath>bin\x64\Release\</OutputPath>
+		<IntermediateOutputPath>obj\x64\Release\</IntermediateOutputPath>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<Content Include="Assets\icon.ico">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+
+		<Content Include="Assets\logo+text_whitemdpi.png">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+
+		<EmbeddedResource Include="Assets\BAD_Red.png" />
+		<EmbeddedResource Include="Assets\good_green.png" />
+	</ItemGroup>
+
+</Project>
