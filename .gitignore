@@ -42,3 +42,4 @@ Thumbs.db
 /setup*/
 /dist*/
 ApiKeyAuth.cs
+HealthIpAllowlist.cs

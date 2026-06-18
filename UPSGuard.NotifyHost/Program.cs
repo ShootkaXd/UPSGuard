@@ -56,8 +56,7 @@ namespace UPSGuard.NotifyHost
 			"Переход в спящий режим отменён.";
 
         private const string MSG_HIBERNATING =
-            "Хост уходит в гибернацию.\n" +
-            "Компьютер будет переведён в спящий режим.";
+            "Хост переведен в спящий режим.";
 
         [STAThread]
         static void Main()
